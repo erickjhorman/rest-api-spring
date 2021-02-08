@@ -16,10 +16,12 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerRepository customerRepository;
 
     // Test comment
+    // Test comment 2
     @Override
     public Customer findCustomerById(Long id) {
         return customerRepository.findById(id).get();
     }
+
 
     @Override
     public List<Customer> findAllCustomers() {
