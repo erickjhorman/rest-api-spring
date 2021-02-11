@@ -21,12 +21,11 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: CopyFiles@2
+- task: SonarQubePrepare@4
   inputs:
-    contents: '**/*.jar'
-    targetFolder: '$(Build.artifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
+    SonarQube: 'conexionsonar'
+    scannerMode: 'MSBuild'
+- task: SonarQubeAnalyze@4
+- task: SonarQubePublish@4
   inputs:
-    artifactName: 'war'
-    pathToPublish: '$(Build.artifactStagingDirectory)'
+    pollingTimeoutSec: '300'
