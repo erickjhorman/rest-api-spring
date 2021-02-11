@@ -25,6 +25,7 @@ steps:
   inputs:
     SonarQube: 'conexionsonar'
     scannerMode: 'MSBuild'
+    projectKey: 'sobarqube-azuredevops'
 - task: SonarQubeAnalyze@4
 - task: SonarQubePublish@4
   inputs:
