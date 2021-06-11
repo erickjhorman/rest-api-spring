@@ -4,7 +4,6 @@ import com.example.co.restapispring.domain.Customer;
 import com.example.co.restapispring.repository.CustomerRepository;
 import com.example.co.restapispring.service.CustomerService;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
