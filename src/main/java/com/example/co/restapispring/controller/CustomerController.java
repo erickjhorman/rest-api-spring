@@ -18,6 +18,7 @@ public class CustomerController {
 
     @GetMapping
     List<Customer> getAllCustomers(){
+        System.out.println("here in getAllCustomers");
        return  customerService.findAllCustomers();
     }
 
