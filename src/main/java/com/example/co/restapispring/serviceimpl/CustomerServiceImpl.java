@@ -1,4 +1,4 @@
-package com.example.co.restapispring.serviceImpl;
+package com.example.co.restapispring.serviceimpl;
 
 import com.example.co.restapispring.domain.Customer;
 import com.example.co.restapispring.repository.CustomerRepository;
